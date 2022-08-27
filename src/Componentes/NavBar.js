@@ -4,8 +4,9 @@ import Html from './html';
 import Css from './css';
 import Jss from './js'
 import React from './react';
-import { Link, Route } from "wouter";
-
+import Error404 from './error';
+import { Link, Route, } from "wouter";
+import { Switch } from "wouter";
 
 export default function NavBar() {
   return (
@@ -37,11 +38,17 @@ export default function NavBar() {
 
 
       </nav>
-      <Route path="/" component={All}></Route>
-      <Route path="/html" component={Html}></Route>
-      <Route path="/css" component={Css}></Route>
-      <Route path="/js" component={Jss}></Route>
-      <Route path="/react" component={React}></Route>
+      <Switch>
+        <Route exact path="/" component={All}></Route>
+        <Route exact path="/html" component={Html}></Route>
+        <Route exact path="/css" component={Css}></Route>
+        <Route exact path="/js" component={Jss}></Route>
+        <Route exact path="/react" component={React}></Route>
+        <Route path="/:rest*" component={Error404}>
+      </Route>
+      </Switch>
+      
     </div>
-    )}
+  )
+}
 
