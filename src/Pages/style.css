@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-  background-color: azure;
+  background: url(https://img.freepik.com/free-vector/white-technology-background_23-2148390327.jpg?w=1380&t=st=1662481843~exp=1662482443~hmac=903661c9f2a704de362b59f8c9afac1b9250abd98fff92c1c1c976f20b949516);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw;
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -25,35 +30,36 @@ h1 {
   text-align: center;
 }
 
-.conoce{
+.conoce {
 
   text-align: center;
 }
+
 button {
   margin-top: 10px;
   margin-left: 47%;
 
 }
 
-.open{
+.open {
   text-align: center;
 }
 
 
-.video{
-width: 500px;
+.video {
+  width: 500px;
 
 }
 
-.blender{
+.blender {
   width: 400px;
 }
 
-alfaimg{
+alfaimg {
   width: 200px;
 }
 
-.container{
+.card_container {
   display: flex;
-  flex-wrap: wrap;
+  gap: 30px;
 }

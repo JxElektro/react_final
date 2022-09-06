@@ -1,9 +1,9 @@
 import '../index.css'
-import All from './all';
-import Html from './html';
-import Css from './css';
-import Jss from './js'
-import React from './react';
+import All from '../Pages/all';
+import Html from '../Pages/html';
+import Alfa from '../Pages/Alfa';
+import Jss from '../Pages/js'
+import Contact from '../Pages/Contact';
 import Error404 from './error';
 import { Link, Route, } from "wouter";
 import { Switch } from "wouter";
@@ -12,26 +12,26 @@ export default function NavBar() {
   return (
     <div>
       <nav className="nav">
-        <Link href="/" className="title">helloWorld_</Link>
+        <Link href="/" className="title">JxElektro</Link>
         <ul>
           <li>
             <Link href="/html">
-              HTML
+              Web
             </Link>
           </li>
           <li>
-            <Link href="/css">
-              CSS
+            <Link href="/Alfa">
+              Animacion
             </Link>
           </li>
           <li>
             <Link href="/js">
-              JavaScript
+              Programacion
             </Link>
           </li>
           <li>
-            <Link href="/react">
-              React
+            <Link href="/Contact">
+              Contacto
             </Link>
           </li>
         </ul>
@@ -41,13 +41,13 @@ export default function NavBar() {
       <Switch>
         <Route exact path="/" component={All}></Route>
         <Route exact path="/html" component={Html}></Route>
-        <Route exact path="/css" component={Css}></Route>
+        <Route exact path="/Alfa" component={Alfa}></Route>
         <Route exact path="/js" component={Jss}></Route>
-        <Route exact path="/react" component={React}></Route>
+        <Route exact path="/Contact" component={Contact}></Route>
         <Route path="/:rest*" component={Error404}>
-      </Route>
+        </Route>
       </Switch>
-      
+
     </div>
   )
 }
