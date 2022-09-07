@@ -2,7 +2,6 @@ import React from "./Contact";
 import ActionAreaCard from "../Componentes/Cards";
 import './style.css'
 import { Link } from "wouter";
-import Html from '../Pages/html';
 
 
 
@@ -23,11 +22,15 @@ function All(props) {
         <h3>¡Hola! Soy Jhen Nuñez <br/> Desarrollador con {total} meses de experiencia con espectativas de convertirme en "FullStack".</h3>
         <p>Me Gustan los Mapas y el Diseño 3D y me gustaria trabajar proyectos que utilicen Realidad Aumentada.</p>
         <div className="card_container">
-        <Link href="/html"><ActionAreaCard name="Web" parra="Hola"  url="https://images2.imgbox.com/75/51/xXa2ZISw_o.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/></Link>
-        <ActionAreaCard name="Animacion" parra="Buen" url="https://images2.imgbox.com/42/e6/o9ejCvu5_o.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-        <ActionAreaCard name="Programacion" parra="dia" url="https://images2.imgbox.com/c9/91/tQtqq9Hb_o.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+        <Link href="/html"><a href="/html"><ActionAreaCard name="Web" parra="Diseño y maquetado Web"  url="https://images2.imgbox.com/75/51/xXa2ZISw_o.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/></a></Link>
+        <Link href="/Alfa"><a href="/Alfa"><ActionAreaCard name="Animacion" parra="Diseño 3D y Animacion" url="https://images2.imgbox.com/42/e6/o9ejCvu5_o.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/></a></Link>
+        <Link href="/js"><a href="/js"><ActionAreaCard name="Programacion" parra="Desarrollo, Consumo de APIs" url="https://images2.imgbox.com/c9/91/tQtqq9Hb_o.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/></a></Link>
         </div>
       </div>
+
+      
+
+
     </div>
   );
 }
