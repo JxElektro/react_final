@@ -1,4 +1,3 @@
-import '../index.css'
 import All from '../Pages/all';
 import Html from '../Pages/html';
 import Alfa from '../Pages/Alfa';
@@ -12,8 +11,8 @@ export default function NavBar() {
   return (
     <div>
       <nav className="nav">
-        <Link href="/" className="title">JxElektro</Link>
-        <ul>
+        <Link href="/" className="title"><img width="75px" height="75px" src="https://images2.imgbox.com/46/8f/pCbhuR5w_o.png" alt="Logo" /></Link>
+        <ul className="nav2">
           <li>
             <Link href="/html">
               Web

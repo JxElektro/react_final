@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppinsdisplay=swap');
 
 body {
   background-color: azure;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  color: darkblue;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(28, 27, 27);
 }
 
 .main {
@@ -21,7 +21,6 @@ body {
 
 
 h1 {
-
   text-align: center;
 }
 
@@ -37,18 +36,6 @@ button {
 }
 
 
-.video{
-width: 500px;
-
-}
-
-.blender{
-  width: 400px;
-}
-
-alfaimg{
-  width: 200px;
-}
 
 .container{
   display: flex;

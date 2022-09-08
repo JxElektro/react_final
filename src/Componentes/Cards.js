@@ -12,15 +12,15 @@ export default function ActionAreaCard(props) {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="130"
           image={props.url}
           alt={props.name}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h6" textAlign={"center"} component="div">
             {props.name}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="Poppins"  color="text.secondary">
             {props.parra}
           </Typography>
         </CardContent>

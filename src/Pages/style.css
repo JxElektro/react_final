@@ -6,17 +6,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100vw;
-
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  color: darkblue;
 }
 
 .main {
-  margin-top: 30px;
-  margin-left: 25%;
   justify-content: center;
   width: 50%;
   display: flex;
@@ -25,7 +20,7 @@ body {
 }
 
 
-h1 {
+h1, h5{
 
   text-align: center;
 }
@@ -37,6 +32,7 @@ h1 {
 
 button {
   margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 47%;
 
 }
@@ -45,19 +41,6 @@ button {
   text-align: center;
 }
 
-
-.video {
-  width: 500px;
-
-}
-
-.blender {
-  width: 400px;
-}
-
-alfaimg {
-  width: 200px;
-}
 
 .card_container {
   display: flex;
