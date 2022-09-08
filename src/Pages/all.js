@@ -13,7 +13,7 @@ function All(props) {
   const day = today.getMonth();
   const total = (day - monthBegin);
 
-
+//Cards de MUI Que utilizan Props.
   return (
     < div >
       <div className='main'>
