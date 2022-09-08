@@ -17,7 +17,7 @@ function All(props) {
   return (
     < div >
       <div className='main'>
-        <h1>Desarrollador Jr.</h1>
+        <h2>Desarrollador Jr.</h2>
         <h3 className="conoce"> HTML5 | CSS | JavaScript | React</h3>
         <h4>¡Hola! Soy Jhen Nuñez <br/> Desarrollador con {total} meses de experiencia con espectativas de convertirme en "FullStack".<br/>Aficionado de el Diseño 3D y me gustaria trabajar proyectos que utilicen Realidad Aumentada.</h4>
         <div className="card_container">
