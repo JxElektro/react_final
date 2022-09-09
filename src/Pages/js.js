@@ -14,14 +14,23 @@ function Jss() {
         flexWrap: 'wrap',
         '& > :not(style)': {
           m: 6,
-          width: 400,
-          height: 400,
+          width: "25%",
+          height: 600,
         },
       }}
     >
-      <Paper elevation={15}>Proyecto A</Paper>
-      <Paper elevation={15}>Proyecto B</Paper>
-      <Paper elevation={15}>Proyecto C</Paper>
+      <Paper elevation={15}><iframe src="https://jxelektro.github.io/backgroundColorFlipperJs/" title='Flipper' width='100%' height='100%'>
+      </iframe></Paper>
+      <Paper elevation={15}><iframe src="https://jxelektro.github.io/api_cripto_js/" title='Bitcoin' width='100%' height='100%'>
+      </iframe></Paper>
+      <Paper elevation={15}><iframe src="https://jxelektro.github.io/react_introduccion/" title='Calculadora' width='100%' height='100%'>
+      </iframe></Paper>
+      <Paper elevation={15}><iframe src="https://jxelektro.github.io/CounterJs/" title='Calculadora' width='100%' height='100%'>
+      </iframe></Paper>
+      <Paper elevation={15}><iframe src="https://jxelektro.github.io/api_weather_js/" title='Calculadora' width='100%' height='100%'>
+      </iframe></Paper>
+      <Paper elevation={15}><iframe src="https://jxelektro.github.io/calculadora/" title='Calculadora' width='100%' height='100%'>
+      </iframe></Paper>
     </Box>
     <div className='main'>
     

@@ -5,6 +5,8 @@ import Paper from '@mui/material/Paper';
 
 function Html() {
 
+
+
   return (
     < div >
     <h1>Web</h1>
@@ -15,14 +17,19 @@ function Html() {
         flexWrap: 'wrap',
         '& > :not(style)': {
           m: 6,
-          width: 400,
-          height: 250,
+          width: "90%",
+          height: 650,
         },
       }}
     >
-    <Paper elevation={20}>Proyecto A</Paper>
-    <Paper elevation={20}>Proyecto B</Paper>
-    <Paper elevation={20}>Proyecto C</Paper>
+    <Paper elevation={20}><iframe src="https://jxelektro.github.io/css_grid/" title='Hola' width='100%' height='100%'>
+    </iframe></Paper>
+    <Paper elevation={20}><iframe src="https://jxelektro.github.io/IslaCanela/" title='Hola' width='100%' height='100%'>
+    </iframe></Paper>
+    <Paper elevation={20}><iframe src="https://jxelektro.github.io/proyecto_final_html_css/" title='Hola' width='100%' height='100%'>
+    </iframe></Paper>
+    <Paper elevation={20}><iframe src="https://jxelektro.github.io/desafio_github/" title='Hola' width='100%' height='100%'>
+    </iframe></Paper>
     </Box>
     <div className='main'>
     
