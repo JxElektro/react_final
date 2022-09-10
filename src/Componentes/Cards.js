@@ -20,7 +20,7 @@ export default function ActionAreaCard(props) {
           <Typography gutterBottom variant="h6" textAlign={"center"} component="div">
             {props.name}
           </Typography>
-          <Typography variant="Poppins"  color="text.secondary">
+          <Typography variant="Poppins" color="text.secondary">
             {props.parra}
           </Typography>
         </CardContent>

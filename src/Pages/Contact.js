@@ -7,26 +7,25 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-
 function Contact() {
 
   return (
-    <div id='icon'>
+    <>
       < div className='main'><h1>Contacto</h1>
-      <div>
-      <LinkedInIcon />
-      <TwitterIcon />
-      <InstagramIcon />
-      <GitHubIcon />
+        <div className="open">
+          <a href="https://www.linkedin.com/in/jxelektro/" rel="noreferrer " target="_blank"><LinkedInIcon /></a>
+          <a href="https://twitter.com/jxelektro" rel="noreferrer " target="_blank"><TwitterIcon /></a>
+          <a href="https://www.instagram.com/saturnlaboratory/" rel="noreferrer " target="_blank"><InstagramIcon /></a>
+          <a href="https://github.com/JxElektro" rel="noreferrer " target="_blank"><GitHubIcon /></a>
+          <Askme />
+          <div className='main'>
+            <Link className="linkhome" href='/'>
+              <button className="back">Volver a Incio</button>
+            </Link>
+          </div>
+        </div>
       </div>
-
-      <Askme />
-      </div >
-      <Link href='/'>
-        <button className="back">Volver a Incio</button>
-      </Link>
-    </div>
-
+    </>
   );
 }
 
