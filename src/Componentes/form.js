@@ -1,18 +1,19 @@
 import { useFormik } from 'formik'
 import * as yup from 'yup';
+import './style.css'
 
 const Askme = () => {
   const formik = useFormik({
     initialValues:{ name:"", email:"" , area:""},
     validationSchema:yup.object({
       name: yup.string()
-      .required("El Nombre es obligatorio")
-      .max(25, "El Maximo es de 20 Caracteres"),
+      .required("*El Nombre es obligatorio")
+      .max(25, "*El Maximo es de 20 Caracteres"),
       email: yup.string()
-      .required("El Nombre es obligatorio")
-      .email("El formato del Email es incorrecto"),
+      .required("*El Email es obligatorio")
+      .email("*El formato del Email es incorrecto"),
       area: yup.string()
-      .required("El campo de pregunta es obligatorio")
+      .required("*El campo Pregunta es obligatorio")
   }),
     onSubmit: values =>{
       console.log(values);
@@ -20,7 +21,7 @@ const Askme = () => {
   })
 
   return (
-    <div>
+    <div className="container">
       <form onSubmit={formik.handleSubmit} >
         <div>
           <label>Nombre:</label><br/>
@@ -30,9 +31,9 @@ const Askme = () => {
           id="name"
           onChange={formik.handleChange}
           value={formik.values.name}
-          />
-          {formik.errors.name && <div>{formik.errors.name}</div>}
-          <br/>
+          /><br/>
+          {formik.errors.name && <div id="error">{formik.errors.name}</div>}
+          
           <label>Email:</label><br/>
           <input 
           type="email" 
@@ -42,7 +43,7 @@ const Askme = () => {
           value={formik.values.email}
           />
           <br/>
-          {formik.errors.email && <div>{formik.errors.email}</div>}
+          {formik.errors.email && <div id="error">{formik.errors.email}</div>}
           <label>Preguntame</label><br/>
           <textarea 
           type="textarea" 
@@ -51,9 +52,9 @@ const Askme = () => {
           onChange={formik.handleChange}
           value={formik.values.area}
           />
-          {formik.errors.area && <div>{formik.errors.area}</div>}
+          {formik.errors.area && <div id="error">{formik.errors.area}</div>}
         </div>
-        <input type="submit" value="submit"/>
+        <input type="submit" value="submit" id="but"/>
       </form>
     </div>
   )

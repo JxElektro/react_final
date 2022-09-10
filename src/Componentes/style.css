@@ -31,3 +31,43 @@ h1 {
   display: flex;
   flex-wrap: wrap;
 }
+
+
+form{
+  width: 98%;
+  text-align: center;
+  
+  
+}
+
+.container{
+  width: 100%;
+}
+
+#email,#name,#area {
+  width:  100%;
+  background-color: rgb(28, 27, 27);
+  color:#f7cb2d;
+  padding: 5px;
+}
+
+#area {
+  height: 15vh;
+  resize: none;
+}
+
+#but{
+  margin-bottom: 70px;
+  border-radius: 5px;
+  padding: 5px 8px;
+  background-color: #f7cb2d;
+  color:rgb(28, 27, 27);
+  font-size: medium;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+#error{
+  color: red;
+  font-size: smaller;
+}

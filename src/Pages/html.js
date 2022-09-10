@@ -17,7 +17,7 @@ function Html() {
         flexWrap: 'wrap',
         '& > :not(style)': {
           m: 6,
-          width: "90%",
+          width: "95%",
           height: 650,
         },
       }}
@@ -33,12 +33,12 @@ function Html() {
     </Box>
     <div className='main'>
     
-    
-    </div >
-    <Link href='/'>
+    <Link className='linkhome'  href='/'>
     <button className="back">Volver a Incio</button>
     <br/>
     </Link>
+    </div >
+    
     </div>
   );
 }

@@ -22,6 +22,7 @@ function Alfa(props) {
 // Se Utilizo MUI para hacer Grids que sirvieran como marco para las
 
   return (
+    <>
     <Box sx={{ width: '100%' }}>
     <br/>
     <h1> Renderizado 3D</h1>
@@ -47,11 +48,15 @@ function Alfa(props) {
     </Grid>
       </Grid>
       <br/>
-      <Link href='/'>
-    <button className="back">Volver a Incio</button>
-    </Link>
+      
     </Box>
-  
+    <div className='main'>
+    
+    <Link className="linkhome" href='/'>
+    <button id="back">Volver a Incio</button>
+    <br/>
+    </Link>
+    </div ></>
   );
 }
 
