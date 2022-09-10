@@ -19,17 +19,13 @@ body {
   align-content: center;
 }
 
-
 h1 {
   text-align: center;
 }
 
-
 .open{
   text-align: center;
 }
-
-
 
 .container{
   display: flex;
