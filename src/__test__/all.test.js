@@ -6,6 +6,6 @@ import All from "../Pages/All";
 test("renders All component", () => {
   render(<All />);
   // create a const to store the element id
-  const allElement = screen.getByTestId("containerAll");
+  const allElement = screen.getByTestId("main");
   expect(allElement).toBeInTheDocument();
 });

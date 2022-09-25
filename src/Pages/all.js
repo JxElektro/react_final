@@ -15,7 +15,7 @@ function All(props) {
 
   //Cards de MUI Que utilizan Props.
   return (
-    < div id="main" data-testid="containerAll">
+    < div id="main" data-testid="main">
       <div className="main">
         <h2>Desarrollador Jr.</h2>
         <h3 className="conoce"> HTML5 | CSS | JavaScript | React</h3>
