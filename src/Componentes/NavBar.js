@@ -10,7 +10,7 @@ import { Switch } from "wouter";
 export default function NavBar() {
   return (
     <div>
-      <nav className="nav">
+      <nav className="nav" id="navBar">
         <Link href="/" className="title"><img width="100px" height="100px" src="https://images2.imgbox.com/46/8f/pCbhuR5w_o.png" alt="Logo" /></Link>
         <ul className="nav2">
           <li>

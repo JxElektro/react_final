@@ -23,7 +23,7 @@ function Alfa(props) {
 
   return (
     <>
-      <Box sx={{ width: '100%' }}>
+      <Box data-testid="containerAlfa" sx={{ width: '100%' }}>
         <br />
         <h1> Renderizado 3D</h1>
         <h5>Proyectos 3D en base a Blender. </h5>

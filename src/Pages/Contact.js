@@ -11,7 +11,7 @@ function Contact() {
 
   return (
     <>
-      < div className='main'><h1>Contacto</h1>
+      < div className='main' data-testid="containerContact"><h1>Contacto</h1>
         <div className="open">
           <a href="https://www.linkedin.com/in/jxelektro/" rel="noreferrer " target="_blank"><LinkedInIcon /></a>
           <a href="https://twitter.com/jxelektro" rel="noreferrer " target="_blank"><TwitterIcon /></a>
